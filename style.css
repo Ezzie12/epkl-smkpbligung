@@ -1,0 +1,652 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.topbar {
+  background-color: rgb(4, 140, 252);
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 90px;
+}
+
+nav {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 70px;
+  margin: 0 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.link li {
+  margin: 0 15px;
+}
+
+.link li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  display: none;
+  align-items: center;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+/* banner style start */
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sambutan {
+  text-align: center;
+}
+
+.slide-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/UPTD.jpg");
+}
+
+.slide-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bersama2.jpg");
+}
+
+.slide-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/apel.jpg");
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+}
+/* banner style end */
+
+.latar {
+  display: flex;
+  justify-content: center;
+  padding: 45px 90px;
+  flex-direction: column;
+}
+.latar h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.latar a {
+  background-color: rgb(4, 140, 252);
+  padding: 5px;
+  width: 200px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(4, 140, 252);
+  padding: 15px;
+  color: white;
+}
+
+.tentang-kami {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.sosial-media {
+  display: flex;
+  gap: 6px;
+}
+
+.icon {
+  width: 24px;
+  position: static;
+  height: 24px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.copyrght {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* tujuan */
+.tujuan {
+  display: flex;
+  justify-content: center;
+  padding: 45px 90px;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  color: #fff;
+}
+.tujuan h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.manfaat {
+  display: flex;
+  justify-content: center;
+  padding: 45px 90px;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  color: #fff;
+}
+.manfaat h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.manfaat a {
+  background-color: rgb(4, 140, 252);
+  padding: 5px;
+  width: 200px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+/* tujuan end */
+
+/* profil */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+/* Gaya umum untuk section */
+.section-profil {
+  padding: 40px 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-profil h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Bungkus semua profil */
+.profil-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Kotak masing-masing profil */
+.profil {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(3, 3, 3, 0.916);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+  height: 230px;
+}
+
+.profil:hover {
+  transform: translateY(-5px);
+}
+
+/* Gambar profil */
+.profil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Teks nama dan jurusan */
+.orang small {
+  display: block;
+  font-size: 14px;
+  color: #030303;
+  margin: 4px 0;
+}
+.profil-wrapper a {
+  text-decoration: none;
+}
+/* Detail- profil */
+.bgprofil {
+  padding: 40px 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.profil-detail {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #f8f7f7;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.696);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.profil-detail img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ddd;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.info p {
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.info .label {
+  font-weight: bold;
+  color: #222;
+}
+.info a {
+  background-color: rgb(4, 140, 252);
+  padding: 5px 8px;
+  width: 200px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: auto;
+}
+
+/* wilayah style start */
+.wilayah {
+  padding: 30px 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wilayah-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.wilayah-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.wilayah-box iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.wilayah-box a {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: rgb(4, 140, 252);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+/* wilayah style end */
+.jt71 {
+  padding: 30px 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jt71 .grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.jt71 .grid-container1 .grid-jt7 {
+  margin-bottom: 30px;
+}
+
+.jt71 .grid-container1 .grid-jt7 img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  display: block;
+}
+
+.jt71 .grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.jt71 .grid-container2 .grid-jt7 {
+  margin-bottom: 30px;
+}
+
+.jt71 .grid-container2 .grid-jt7 img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  display: block;
+}
+.jt71 a {
+  background-color: rgb(4, 140, 252);
+  padding: 5px;
+  width: 75px;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.krtjt {
+  padding: 30px 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.krtjt .grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+.krtjt .grid-container3 .grid-kertjt {
+  margin-bottom: 30px;
+}
+.krtjt .grid-container3 .grid-kertjt p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.krtjt .grid-container3 .grid-kertjt img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  display: block;
+}
+.krtjt .grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+.krtjt .grid-container4 .grid-kertjt {
+  margin-bottom: 20px;
+}
+.krtjt .grid-container4 .grid-kertjt p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.krtjt .grid-container4 .grid-kertjt img {
+  width: 100%;
+  aspect-ratio: 2 / 2;
+  display: block;
+}
+.krtjt a {
+  background-color: rgb(4, 140, 252);
+  padding: 5px;
+  width: 75px;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+/*dokumentasi*/
+.dok1 {
+  padding: 30px 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/bitu.avif");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dok1 .grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.dok1 .grid-container1 .grid-doc1 {
+  margin-bottom: 30px;
+}
+
+.dok1 .grid-container1 .grid-doc1 img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  display: block;
+}
+.dok1 .grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.dok1 .grid-container2 .grid-doc1 {
+  margin-bottom: 30px;
+}
+
+.dok1 .grid-container2 .grid-doc1 img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    z-index: 10;
+    width: 50%;
+    gap: 20px;
+    padding: 100px 0;
+  }
+
+  .link li {
+    margin: 10px 5px;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+
+  .link.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .logo span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .logo img {
+    width: 50px;
+    margin: 0 10px;
+  }
+
+  .latar {
+    padding: 45px 30px;
+  }
+
+  .section-profil h1 {
+    font-size: 22px;
+  }
+
+  .section-profil {
+    padding: 40px 20px;
+  }
+
+  .bgprofil {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profil-detail {
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dok1 {
+    padding: 30px 20px;
+  }
+
+  .dok1 .grid-container1 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .dok1 .grid-container2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .wilayah {
+    padding: 30px 20px;
+  }
+
+  .jt71 {
+    padding: 30px 20px;
+  }
+
+  .jt71 .grid-container1 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .jt71 .grid-container2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .krtjt {
+    padding: 30px 20px;
+  }
+
+  .krtjt .grid-container3 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .krtjt .grid-container4 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 412px) {
+  .link a {
+    font-size: 15px;
+  }
+}
