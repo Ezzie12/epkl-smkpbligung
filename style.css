@@ -540,19 +540,18 @@ body {
   }
 
   .link {
-    position: fixed;
-    top: 0;
-    right: -100%; /* awalnya sembunyi di luar layar */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    right: 0;
     height: 100vh;
     background-color: white;
     color: black;
     z-index: 10;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
+    width: 50%;
     gap: 20px;
-    padding: 100px 20px;
-    transition: right 0.3s ease-in-out; /* animasi geser */
+    padding: 100px 0;
   }
 
   .link li {
@@ -564,15 +563,11 @@ body {
   }
 
   .link.active {
-    right: 0; /* geser masuk */
+    display: flex;
   }
 
   .menu-toggle {
     display: flex;
-    cursor: pointer;
-    font-size: 30px;
-    z-index: 11; /* biar di atas menu */
-    position: relative;
   }
 
   .logo span {
