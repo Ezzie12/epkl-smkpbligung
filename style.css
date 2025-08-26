@@ -552,6 +552,7 @@ body {
     width: 50%;
     gap: 20px;
     padding: 100px 0;
+    transition: right 0.3s ease-in-out;
   }
 
   .link li {
